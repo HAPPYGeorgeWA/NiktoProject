@@ -35,7 +35,7 @@ public class Coin {
             }else {
                 n = Integer.parseInt(s);
                 if (n!=0) {
-                    total = total+n;
+                    total +=n;
                 }
             }
             System.out.println("Total:"+total);
