@@ -13,14 +13,10 @@ public class Vending {
             int n = Integer.parseInt(s);
 
             switch (n){
-                case 1 :
-                    total =total+1;
-                    break;
+                case 1:
                 case 5:
-                    total=total+5;
-                    break;
                 case 10:
-                    total =total+10;
+                    total =total+n;
                     break;
                 case 0:
                     end = true;
