@@ -6,48 +6,42 @@ public class Vending {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int total = 0;
-        int aPrice = 15;
-        int bPrice =25;
         boolean end =false;
+        int[]prices={15,20,25};
         while(!end){
             System.out.println("Please neter coin(1/5/10) Total: "+total);
             String s= scanner.next();
 
-        try {
-            int n = Integer.parseInt(s);
-            switch (n){
-                case 1:
-                case 5:
-                case 10:
-                    total =total+n;
+            switch (s){
+                case "1":
+                case "5":
+                case "10":
+                    int n = Integer.parseInt(s);
+                    total +=n;
                     break;
-                case 0:
+
+                case"a":
+                case"b":
+                case"c":
+                    int index=s.charAt(0)-97;
+                    if(total>=prices[index]) {
+                        System.out.println("Don!!!");
+                        total-=prices[index];
+                    }else {
+                        System.out.println("Beep!!!");
+                    }
+                    break;
+                case "0":
                     end = true;
                     break;
-
                 default:
+                    System.out.println("Beep!!!");
                     break;
             }
-        }catch (NumberFormatException e){
-
-            if(s.equals("a")){
-                if(total>=aPrice){
-                    System.out.println("DON!!!");
-                    total=total-aPrice;
-                }else{
-                    System.out.println("BEE!!!");
-                }
 
             }
-            if(s.equals("b")){
-                if(total>=bPrice){
-                    System.out.println("DON!!!");
-                    total=total-bPrice;
-                }else{
-                    System.out.println("BEE!!!");
-                }
-            }
-        }
-        }
+        System.out.println("END");
     }
 }
+
+
