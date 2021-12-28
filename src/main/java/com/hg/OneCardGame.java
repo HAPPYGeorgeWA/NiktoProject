@@ -35,6 +35,7 @@ public class OneCardGame {
         int player = random.nextInt(52);
         int playerpoint = player%13+1;
         int playerType = player/13;
+
         System.out.println(playerpoint+""+types[playerType]+"(" +player+ ")");
         if(playerpoint>point ||(playerpoint==point&&playerType>type)){
             System.out.println("you win");
