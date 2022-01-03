@@ -4,16 +4,9 @@ import java.util.Random;
 
 public class Dice {
 
-    int point=1;
-    public Dice(){
-        point = new Random().nextInt(6)+1;
-    }
+    int point;
+    public void roll() {
 
-    public boolean isMax(){
-        if(point==6){
-            return true;
-        }else{
-            return false;
-        }
+        System.out.println("Rolling");
     }
 }

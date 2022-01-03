@@ -31,6 +31,7 @@ public class Vending {
                         System.out.println("Beep!!!");
                     }
                     break;
+
                 case "0":
                     end = true;
                     break;
@@ -38,7 +39,34 @@ public class Vending {
                     System.out.println("Beep!!!");
                     break;
             }
-
+ /*
+            try {
+                int num = Integer.parseInt(s);
+                switch (num) {
+                    case 1:
+                    case 5:
+                    case 10:
+                        total = total + num;
+                        break;
+                    case 0:
+                        end = true;
+                        break;
+                    default:
+                        break;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("ah");
+                if (s.equals("a")) {
+                    System.out.println("A drink");
+                    if (total >= aPrice) {
+                        total = total - aPrice;
+                        System.out.println("DON!");
+                    } else {
+                        System.out.println("BEEP!");
+                    }
+                }
+            }
+            */
             }
         System.out.println("END");
     }

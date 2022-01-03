@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class OneCardGame {
     public static void main(String[] args) {
-        char[]types= {'S','H','D','C'};
+        char[]types= {'c','d','h','s'};
         Random random = new Random();
 
         int []cards = new int[52];
@@ -25,7 +25,7 @@ public class OneCardGame {
 
         }
         System.out.println();
-
+        //0-51,52cards
         System.out.println("computer's card:");
         int computer=cards[0];
         int point = computer%13+1;

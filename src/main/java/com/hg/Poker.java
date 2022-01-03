@@ -3,7 +3,7 @@ package com.hg;
 public class Poker {
    public static void main(String[] args) {
       int[]cards =new int[52];
-      char[]types= {'S','H','D','C'};
+      char[]types= {'c','d','h','s'};
       for (int i = 0; i < 52; i++) {
          cards[i]=i;
       }
