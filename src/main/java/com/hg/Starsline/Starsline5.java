@@ -22,7 +22,7 @@ public class Starsline5 {
                         System.out.print("*");
                     }else{
                         System.out.print(" ");
-                }
+                    }
                 }
             }
             System.out.println();

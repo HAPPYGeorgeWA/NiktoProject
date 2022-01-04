@@ -1,5 +1,7 @@
 package com.hg.aaa;
 
+import com.hg.aaa.Dice;
+
 public class Tester {
     public static void main(String[] args) {
 
