@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Simu2 {
     public static void main(String[] args) {
-        int n =-1;
-        int total=0;
+        int n = -1;
+        int total = 0;
         Scanner scanner = new Scanner(System.in);
-        while(n!=0){
+        while (n != 0) {
             System.out.println("Please enter num:");
             System.out.println("buy item:");
             System.out.println("1) Dress:100");
@@ -15,38 +15,42 @@ public class Simu2 {
             System.out.println("3) Bag:300");
             System.out.println("0) Exit");
             String s = scanner.next();
-            n= Integer.parseInt(s);
+            n = Integer.parseInt(s);
 
-           /* switch (n){
+            switch (n) {
                 case 1:
-                    total=total+100;
-                    System.out.println("Total="+total);
+                    total = total + 100;
+                    System.out.println("Total=" + total);
                     break;
                 case 2:
-                    total=total+200;
-                    System.out.println("Total="+total);
+                    total = total + 200;
+                    System.out.println("Total=" + total);
                     break;
                 case 3:
-                    total=total+300;
-                    System.out.println("Total="+total);
+                    total = total + 300;
+                    System.out.println("Total=" + total);
                     break;
                 case 0:
                     break;
-            }*/
-            if(n==1){
-                total=total+100;
+                default:
+                    System.out.println("beep");
+                    System.out.println("Total="+total);
+                    break;
+            }
+           /* if(n==1){
+                total+=100;
                 System.out.println("Total="+total);
             }else if(n==2){
-                total=total+200;
+                total+=200;
                 System.out.println("Total="+total);
             }else if(n==3){
-                total =total+300;
+                total +=300;
                 System.out.println("Total="+total);
             }else if(n==0){
                 break;
-            }
+            }*/
         }
         System.out.println("Thank you");
-        System.out.println("Total="+total);
+        System.out.println("Total=" + total);
     }
 }
